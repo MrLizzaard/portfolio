@@ -1,30 +1,16 @@
 // const
-const http = require("http");
-const fs = require("fs");
+const express = require("express");
+const app = express();
+const port = 3000;
 
 //  run server
 
-http.createServer(makeServer).listen(3000);
+app.get("/", function (req, res) {
+  res.send("Hello World!");
+});
+
+app.listen(port, function () {
+  console.log(`server on! http://localhost:${port}`);
+});
 
 //function
-
-function makeServer(request, response) {
-  return request
-    .on("error", errorOcurred)
-    .on("data", isData)
-    .on("end", () => {
-      response.on("error", errorOcurred);
-      response.statusCode = 200;
-      response.setHeader("Context-Type", "text/plain");
-      response.write("hi\n");
-      response.end("the end!");
-    });
-}
-
-function errorOcurred(err) {
-  console.error(err);
-}
-
-function isData(data) {
-  console.log(data);
-}
