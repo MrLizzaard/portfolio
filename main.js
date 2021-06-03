@@ -5,9 +5,7 @@ const port = 3000;
 
 //  run server
 
-app.get("/", function (req, res) {
-  res.send("Hello World!");
-});
+app.use(express.static(__dirname + "/public"));
 
 app.listen(port, function () {
   console.log(`server on! http://localhost:${port}`);
