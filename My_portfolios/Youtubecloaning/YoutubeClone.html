@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Youtube Cloning" />
+    <meta property="og:description" content="Cloning" />
+    <meta property="og:image" content="" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Youtube</title>
+  </head>
+  <body>
+    <img src="img/thumb.jpg" class="hidden" />
+    <!-- Header -->
+
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!-- Video Player -->
+
+    <section class="main_video">
+      <video src="vid/sample.mp4" controls></video>
+    </section>
+
+    <!-- Video Info -->
+    <div class="wider">
+      <section class="description">
+        <!-- Metadata -->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#Jung Ma Sang</li>
+            <li>#Kimu Doe Hang</li>
+            <li>#Love Love</li>
+          </ul>
+
+          <div class="titlebox">
+            <span class="title clamp"
+              >Clone Coding Youtube Moblie Website 유튜브 모바일 웹사이트 따라만들기 | 프론트엔드 개발자 입문편 HTML,CSS,Javascript 드림코딩과
+              함께하는 프론트엔드 실전 입문편
+            </span>
+            <button class="Btn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+
+          <span class="viewers">1M views 1 month ago</span>
+        </div>
+
+        <!-- Actions -->
+
+        <ul class="actions">
+          <li>
+            <button class="likeBtn">
+              <i class="fas fa-thumbs-up"></i>
+              <span>0</span>
+            </button>
+          </li>
+          <li>
+            <button class="dislikeBtn"><i class="fas fa-thumbs-down"></i><span>0</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>Share</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>Save</span></button>
+          </li>
+          <li>
+            <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
+          </li>
+        </ul>
+
+        <!-- Channel Description -->
+
+        <div class="channel">
+          <div class="metadata">
+            <img src="img/3x4.jpg" alt="" />
+            <div class="info">
+              <span class="name">MrLizard</span>
+              <span class="subscribers">1M subscribers</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+
+      <!-- Up Next -->
+
+      <section class="upnext">
+        <span>Up next</span>
+        <ul>
+          <li class="nextvideo">
+            <div class="img"><img src="img/1.jpg" alt="thumbnail" class="thumbnail" /></div>
+
+            <div class="des">
+              <span class="title">아이고 이거 하느라고 죽는줄 알았어예</span>
+
+              <span class="name"> MrLizard </span>
+
+              <span class="views">100M views</span>
+            </div>
+
+            <button class="Btn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="nextvideo">
+            <div class="img"><img src="img/2.jpg" alt="thumbnail" class="thumbnail" /></div>
+            <div class="des">
+              <span class="title">미쬬니 사랑해❤</span>
+
+              <span class="name"> MrLizard </span>
+              <span class="views">62K views</span>
+            </div>
+            <button class="Btn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="nextvideo">
+            <div class="img"><img src="img/3.jpg" alt="thumbnail" class="thumbnail" /></div>
+            <div class="des">
+              <span class="title">우리 자기가 제일 이쁘네에엥</span>
+
+              <span class="name"> MrLizard </span>
+              <span class="views">83K views</span>
+            </div>
+            <button class="Btn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
