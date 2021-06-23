@@ -15,5 +15,100 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main class="HomePageLayout">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <img src="./img/dragon-solid.png" alt="dragonIcon" class="navbar__icon" />
+          <a href="#">DoHyeong Kim</a>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">Project</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </nav>
+      <!-- Home -->
+      <section class="home">
+        <img src="./img/home_img.jpg" alt="home_img" class="home__img" />
+        <h1 class="home__text">개발자 김도형의 포트폴리오입니다</h1>
+        <button class="home__contactBtn">Contact Me</button>
+      </section>
+      <!-- About Me -->
+      <section class="aboutMe">
+        <h2 class="aboutMe__title title">About Me</h2>
+        <article class="aboutMe__container">
+          <h3 class="aboutMe__contextTitle">성실한사람</h3>
+          <div class="aboutMe__context">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aspernatur culpa omnis nostrum. Deserunt explicabo, beatae tempora iusto
+            temporibus recusandae.
+          </div>
+        </article>
+      </section>
+      <!-- Skills -->
+      <section class="skills">
+        <h2 class="skills__title title">Skills</h2>
+        <article class="skills__container">
+          <div class="skills__frontend">
+            <div class="skills__html skill__icons"><i class="fab fa-html5"></i>HTML</div>
+            <div class="skills__css skill__icons"><i class="fab fa-css3"></i>CSS</div>
+            <div class="skills__js skill__icons"><i class="fab fa-js"></i>JS</div>
+          </div>
+          <div class="skills__backend">
+            <div class="skills__nodejs skill__icons"><i class="fab fa-node-js"></i>nodeJS</div>
+          </div>
+          <div class="skills__etc">
+            <div class="skills__git skill__icons"><i class="fab fa-git-alt"></i>GIT</div>
+          </div>
+        </article>
+      </section>
+      <!-- Project -->
+      <section class="project">
+        <h2 class="project__title title">Project</h2>
+        <div class="caruosel">
+          <div class="carousel__imgContainer">
+            <div class="carousel__items">
+              <img src="http://placehold.it/240x320" alt="placehold" />
+              <div class="carousel__contents">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint error consequatur, ipsa exercitationem alias unde ipsam similique odio
+                eos assumenda at itaque, accusantium ex beatae officia dolorum laudantium voluptas amet?
+              </div>
+            </div>
+            <div class="carousel__items">
+              <img src="http://placehold.it/240x320" alt="placehold" />
+              <div class="carousel__contents">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet excepturi eum dolorem dicta exercitationem reprehenderit alias
+                magnam, quis delectus possimus suscipit est asperiores, quisquam qui laborum eligendi. Neque, ipsum beatae!
+              </div>
+            </div>
+            <div class="carousel__items">
+              <img src="http://placehold.it/240x320" alt="placehold" />
+              <div class="carousel__contents">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita dolores corrupti atque optio officiis officia amet sunt
+                voluptatum tenetur, quaerat nulla exercitationem eos molestias laudantium quia accusamus doloribus iusto!
+              </div>
+            </div>
+            <div class="carousel__items">
+              <img src="http://placehold.it/240x320" alt="placehold" />
+              <div class="carousel__contents">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt rem eum fugit beatae tempore totam et aut numquam iste. Omnis
+                animi quas facilis voluptates? Reprehenderit architecto inventore repellat quisquam!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact">
+        <h2 class="contact__title title">Contact</h2>
+        <div class="contact__container">
+          <div class="contact__gmail"><i class="fab fa-google"></i></div>
+          <div class="contact__github"><i class="fab fa-github"></i></div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
