@@ -3,6 +3,8 @@
   /* Color */
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-light-purple: #a981a7;
+  --color-grey-blue: #7a7ea4;
 
   /* Font size */
   --font-large: 48px;
@@ -43,6 +45,13 @@ ul {
   padding: 0;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -72,8 +81,10 @@ p {
   margin: 4px 0;
 }
 
+/* Navbar */
+
 #navbar {
-  background-color: salmon;
+  background-color: var(--color-light-purple);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,14 +112,44 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: darksalmon;
+  background-color: var(--color-grey-blue);
   border-radius: var(--size-border-radius);
 }
 
-.home__img {
-  width: 100px;
-  height: 100px;
+/* Home */
+
+#home {
+  background: center url("img/home_background.png");
+  padding: 40px;
+  text-align: center;
 }
+
+.home__img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+}
+
+.home__title {
+  color: var(--color-white);
+}
+
+.home__contactBtn {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+/* 
+
+
+
+ */
 
 .caruosel {
   display: inline-block;
