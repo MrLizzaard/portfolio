@@ -28,6 +28,9 @@
 
   --size-border-radius: 4px;
   --skill-icon-size: 100px;
+  --carousel-width: 640px;
+  --carousel-height: 360px;
+  --carousel-item-count: 5;
 }
 
 /* Universal tags */
@@ -93,6 +96,7 @@ p {
 #navbar {
   background-color: var(--color-light-purple);
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
@@ -100,6 +104,9 @@ p {
 
 .navbar__menu {
   display: flex;
+  position: sticky;
+  top: 0;
+  right: 0;
 }
 
 .navbar__icon {
@@ -127,8 +134,12 @@ p {
 
 #home {
   background: center url("img/home_background.png");
+  height: 90vh;
   padding: 40px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .home__img {
@@ -166,6 +177,7 @@ p {
 #about {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about__title {
@@ -253,19 +265,37 @@ p {
   width: 90%;
 }
 
-/* 
+/* Project, Carousel*/
 
+.carousel {
+  width: var(--carousel-width);
+  height: var(--carousel-height);
 
-
- */
-
-.caruosel {
+  box-sizing: unset;
   display: inline-block;
-  width: 500px;
-  height: 320px;
   overflow: scroll;
+
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel__imgContainer {
+  width: calc(var(--carousel-width) * var(--carousel-item-count));
+  display: flex;
 }
 
 .carousel__items {
+  width: var(--carousel-width);
+  height: var(--carousel-height);
   display: flex;
+  align-items: center;
+}
+
+.carousel__img {
+  width: 50%;
+  height: var(--carousel-height);
 }
