@@ -38,7 +38,7 @@
         <button class="home__contactBtn">Contact Me</button>
       </section>
       <!-- About Me -->
-      <section id="about">
+      <section id="about" class="section">
         <h1 class="about__title title">About Me</h1>
         <article class="about__container">
           <h2 class="about__contextTitle">성실한사람</h2>
@@ -49,50 +49,84 @@
         </article>
       </section>
       <!-- Skills -->
-      <section id="skills">
+      <section id="skills" class="section">
         <h1 class="skills__title title">Skills</h1>
         <article class="skills__container">
           <div class="skills__frontend">
+            <h2>FrontEnd</h2>
             <div class="skills__html skill__card">
               <div class="skill__icon">
                 <i class="fab fa-html5"></i>
               </div>
               <div class="skills__name">HTML</div>
+              <input type="range" step="1" min="0" max="100" value="90" class="skill__range" />
             </div>
             <div class="skills__css skill__card">
               <div class="skill__icon">
                 <i class="fab fa-css3"></i>
               </div>
               <div class="skill__name">CSS</div>
+              <input type="range" step="1" min="0" max="100" value="90" class="skill__range" />
             </div>
             <div class="skills__js skill__card">
               <div class="skill__icon">
                 <i class="fab fa-js"></i>
               </div>
               <div class="skills__name">JS</div>
+              <input type="range" step="1" min="0" max="100" value="80" class="skill__range" />
+            </div>
+            <div class="skills__range-display">
+              <div class="skills__range-description">
+                <span class="skills__name"></span>
+                <span class="skills__range-persentage"></span>
+              </div>
+              <div class="skills__range-container">
+                <div class="skills__range-value"></div>
+              </div>
             </div>
           </div>
           <div class="skills__backend">
-            <div class="skills__nodejs skill__card">
+            <h2>BackEnd</h2>
+            <div class="skills__nodejs skill__card nodeJS">
               <div class="skill__icon">
                 <i class="fab fa-node-js"></i>
               </div>
-              <div class="skills__name">nodeJS</div>
+            </div>
+            <input type="range" step="1" min="0" max="100" value="30" class="skill__range" />
+            <div class="skills__range-display">
+              <div class="skills__range-description">
+                <h2 class="skills__name"></h2>
+                <h2 class="skills__range-persentage"></h2>
+              </div>
+              <div class="skills__range-container">
+                <div class="skills__range-value"></div>
+              </div>
             </div>
           </div>
           <div class="skills__etc">
+            <h2>ETC</h2>
             <div class="skills__git skill__card">
               <div class="skill__icon">
                 <i class="fab fa-git-alt"></i>
               </div>
               <div class="skills__name">GIT</div>
+              <input type="range" step="1" min="0" max="100" value="70" class="skill__range" />
+            </div>
+            <div class="skills__range-display">
+              <div class="skills__range-description">
+                <h2 class="skills__name"></h2>
+                <h2 class="skills__range-persentage"></h2>
+              </div>
+              <div class="skills__range-container">
+                <div class="skills__range-value"></div>
+              </div>
             </div>
           </div>
         </article>
       </section>
       <!-- Project -->
-      <section id="project">
-        <h2 class="project__title title">Project</h2>
+      <section id="project" class="section">
+        <h1 class="project__title title">Project</h1>
         <div class="caruosel">
           <div class="carousel__imgContainer">
             <div class="carousel__items">
@@ -134,7 +168,7 @@
         </div>
       </section>
       <!-- Contact -->
-      <section id="contact">
+      <section id="contact" class="section">
         <h1 class="contact__title title">Contact</h1>
         <h2 class="contact__email">dhk21512@gmail.com</h2>
         <div class="contact__container">
