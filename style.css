@@ -114,6 +114,7 @@ p {
 
 #navbar {
   background-color: var(--color-light-purple);
+  color: var(--color-light-white);
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -121,16 +122,31 @@ p {
   padding: 0 16px;
 }
 
+.navbar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__logo a {
+  color: var(--color-light-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__icon {
+  position: relative;
+  top: 5px;
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  margin-right: 5px;
+}
+
 .navbar__menu {
   display: flex;
   position: sticky;
   top: 0;
   right: 0;
-}
-
-.navbar__icon {
-  width: 40px;
-  height: 32px;
 }
 
 .navbar__menu__item {
