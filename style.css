@@ -65,6 +65,21 @@ button {
   outline: none;
 }
 
+.title:after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 5px 0;
+
+  width: 50px;
+  height: 2px;
+
+  background-color: var(--color-blue);
+}
+
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -313,7 +328,7 @@ p {
   display: inline-block;
   overflow: hidden;
 
-  border: 1px solid black;
+  border: 4px solid var(--color-grey-blue);
   margin: 20px;
 }
 
@@ -331,9 +346,11 @@ p {
 }
 
 .carousel__items {
+  position: relative;
   width: var(--carousel-width);
   height: var(--carousel-height);
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -343,6 +360,11 @@ p {
 }
 
 .carousel__contents {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 
@@ -356,6 +378,15 @@ p {
 .pogoClone,
 .boostCourse {
   flex-direction: column;
+}
+
+.project__github {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 7px;
+  font-size: var(--font-large);
+  color: var(--color-dark-grey);
 }
 
 .carousel__btn-container {
