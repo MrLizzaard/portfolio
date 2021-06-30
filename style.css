@@ -31,6 +31,7 @@
   --skill-icon-size: 100px;
   --carousel-width: 600px;
   --carousel-height: 450px;
+  --carousel-image-height: 450px;
   --carousel-item-count: 5;
 
   /* Annimation */
@@ -195,6 +196,7 @@ p {
 
 .home__title {
   color: var(--color-white);
+  text-align: center;
 }
 
 .home__contactBtn {
@@ -462,12 +464,16 @@ p {
 .contact__container i:hover {
   transform: scale(1.1);
 }
+/* 
 
+
+ */
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   :root {
-    --carousel-width: 400px;
-    --carousel-height: 300px;
+    --carousel-width: 100%;
+    --carousel-height: calc((var(--carousel-width) / 4) * 3);
+    --carousel-image-height: 300px;
   }
 
   /* Navbar */
@@ -524,9 +530,9 @@ p {
   }
 
   .carousel__items {
-    border: 1px solid black;
-    border-radius: var(--size-border-radius);
+    border-radius: calc(var(--size-border-radius) * 2);
     margin: 20px 0 0 0;
+    background-color: var(--color-light-white);
   }
 
   .carousel__img {
@@ -538,6 +544,10 @@ p {
     font-size: var(--font-regular);
   }
 
+  .ToDoList .carousel__img,
+  .ShoppingMall .carousel__img {
+    height: var(--carousel-image-height);
+  }
   .carousel__btn-container {
     display: none;
   }
