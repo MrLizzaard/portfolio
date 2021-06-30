@@ -313,7 +313,7 @@ p {
 }
 
 .skills__range-display {
-  opacity: 0;
+  opacity: 1;
   max-width: 1000px;
   margin: auto;
   transition: all var(--animation-duration) linear;
@@ -465,6 +465,12 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    --carousel-width: 400px;
+    --carousel-height: 300px;
+  }
+
+  /* Navbar */
   .navbar__toggle-btn {
     color: var(--color-light-white);
     font-size: var(--font-medium);
@@ -480,6 +486,59 @@ p {
     flex-direction: column;
     text-align: center;
     width: 100%;
+    display: none;
+  }
+
+  /* About */
+
+  #about {
+    flex-direction: column;
+  }
+
+  .about__title {
+    max-width: 300px;
+  }
+
+  .about__container {
+    margin: 0;
+    text-align: center;
+  }
+
+  .about__context {
+    text-indent: unset;
+  }
+
+  /* carousel */
+
+  .carousel {
+    height: auto;
+    overflow: unset;
+    background-color: transparent;
+    margin: 0;
+  }
+
+  .carousel__imgContainer {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
+  .carousel__items {
+    border: 1px solid black;
+    border-radius: var(--size-border-radius);
+    margin: 20px 0 0 0;
+  }
+
+  .carousel__img {
+    border-radius: var(--size-border-radius);
+    border: none;
+  }
+
+  .project__github {
+    font-size: var(--font-regular);
+  }
+
+  .carousel__btn-container {
     display: none;
   }
 }
