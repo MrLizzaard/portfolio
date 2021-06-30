@@ -114,7 +114,7 @@ p {
 /* Navbar */
 
 #navbar {
-  background-color: var(--color-light-purple);
+  background-color: transparent;
   color: var(--color-light-white);
   display: flex;
   width: 100%;
@@ -122,8 +122,15 @@ p {
   align-items: center;
   padding: 0 16px;
   z-index: 5;
-  position: sticky;
+  position: absolute;
   top: 0;
+  transition: all 100ms linear;
+}
+
+#navbar.sticky {
+  background-color: var(--color-light-purple);
+  transform: scale(1.01);
+  position: fixed;
 }
 
 .navbar__logo {
@@ -180,7 +187,7 @@ p {
 #home {
   background: center url("img/home_background.png");
   height: 90vh;
-  padding: 40px;
+  padding: 80px 40px 40px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
