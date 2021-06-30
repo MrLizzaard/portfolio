@@ -1,21 +1,19 @@
 "use strict";
 
-init();
+// Eventlistener
 
-function init() {
-  // Eventlistener
+document.addEventListener("scroll", () => {
+  stickyNavbar();
+});
 
-  document.addEventListener("scroll", () => {
-    stickyNavbar();
-  });
-}
+// functions
 
 function stickyNavbar() {
   const navbar = document.querySelector("#navbar");
-  let skicky = navbar.offsetTop;
-  if (window.pageYOffset == 0) {
-    navbar.classList.remove("sticky");
+  const navbarHeight = navbar.getBoundingClientRect().height;
+  if (window.scrollY > navbarHeight) {
+    navbar.classList.add("navbar__sticky");
   } else {
-    navbar.classList.add("sticky");
+    navbar.classList.remove("navbar__sticky");
   }
 }
