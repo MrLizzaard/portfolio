@@ -357,7 +357,7 @@ p {
   display: inline-block;
   overflow: hidden;
 
-  margin: 20px;
+  margin: 20px 20px 0 20px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -425,10 +425,9 @@ p {
 
 .carousel__btn {
   background-color: var(--color-dark-grey);
-  margin: 10px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  margin: 5px;
+  width: 30px;
+  height: 4px;
 }
 
 .carousel__btn:hover {
