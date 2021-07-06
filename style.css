@@ -177,6 +177,7 @@ p {
 }
 
 .navbar__menu__item:hover {
+  color: var(--color-black);
   background-color: var(--color-grey-blue);
   border-radius: var(--size-border-radius);
 }
