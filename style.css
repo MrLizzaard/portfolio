@@ -474,8 +474,21 @@ p {
 }
 /* 
 
-
+  arrow up Btn
  */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: var(--color-light-purple);
+  font-size: var(--font-medium);
+  color: var(--color-white);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   :root {

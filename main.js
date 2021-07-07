@@ -3,17 +3,18 @@
 //consts
 const navbarMenu = document.querySelector(".navbar__menu");
 const contactMeBtn = document.querySelector(".home__contactBtn");
+const home = document.querySelector("#home");
+const homeHeight = home.getBoundingClientRect().height;
+const homeContainer = document.querySelector(".home__container");
+const arrowUp = document.querySelector(".arrow-up");
 
 // Eventlistener
 
+function arrowUpOpacityHandler() {}
+
 document.addEventListener("scroll", () => {
-  const navbar = document.querySelector("#navbar");
-  const navbarHeight = navbar.getBoundingClientRect().height;
-  if (window.scrollY > navbarHeight) {
-    navbar.classList.add("navbar__sticky");
-  } else {
-    navbar.classList.remove("navbar__sticky");
-  }
+  stickyNavbarHandler();
+  homeAndArrowUpOpacityHandler();
 });
 
 //navbar click event
@@ -30,12 +31,10 @@ contactMeBtn.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
-//home opacity
-const home = document.querySelector("#home");
-const homeHeight = home.getBoundingClientRect().height;
-const homeContainer = document.querySelector(".home__container");
-document.addEventListener("scroll", () => {
-  homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
+//arrow up Btn
+
+arrowUp.addEventListener("click", () => {
+  scrollIntoView("#home");
 });
 
 //function
@@ -43,4 +42,19 @@ document.addEventListener("scroll", () => {
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: "smooth" });
+}
+
+function stickyNavbarHandler() {
+  const navbar = document.querySelector("#navbar");
+  const navbarHeight = navbar.getBoundingClientRect().height;
+  if (window.scrollY > navbarHeight) {
+    navbar.classList.add("navbar__sticky");
+  } else {
+    navbar.classList.remove("navbar__sticky");
+  }
+}
+
+function homeAndArrowUpOpacityHandler() {
+  homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
+  arrowUp.style.opacity = window.scrollY / homeHeight;
 }
