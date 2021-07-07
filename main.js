@@ -1,16 +1,8 @@
 "use strict";
 
 //consts
-const navbarMenu = document.querySelector(".navbar__menu");
-const contactMeBtn = document.querySelector(".home__contactBtn");
-const home = document.querySelector("#home");
-const homeHeight = home.getBoundingClientRect().height;
-const homeContainer = document.querySelector(".home__container");
-const arrowUp = document.querySelector(".arrow-up");
 
 // Eventlistener
-
-function arrowUpOpacityHandler() {}
 
 document.addEventListener("scroll", () => {
   stickyNavbarHandler();
@@ -19,6 +11,8 @@ document.addEventListener("scroll", () => {
 });
 
 //navbar click event
+
+const navbarMenu = document.querySelector(".navbar__menu");
 navbarMenu.addEventListener("click", (e) => {
   const target = e.target;
   if ("navbar__menu__item" === target.classList[0]) {
@@ -28,15 +22,30 @@ navbarMenu.addEventListener("click", (e) => {
 
 //contact me btn handler
 
+const contactMeBtn = document.querySelector(".home__contactBtn");
 contactMeBtn.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
 //arrow up Btn
 
+const arrowUp = document.querySelector(".arrow-up");
 arrowUp.addEventListener("click", () => {
   scrollIntoView("#home");
 });
+
+//skill value display
+
+//carousel Btn
+
+const carouselBtn = document.querySelector(".carousel__btn-container");
+const carousel = document.querySelector(".carousel__imgContainer");
+let carouselWidth = 600;
+for (let i = 0; i < carouselBtn.childElementCount; i++) {
+  carouselBtn.children[i].addEventListener("click", () => {
+    carousel.style.transform = `translate(-${carouselWidth * i}px)`;
+  });
+}
 
 //function
 
@@ -55,6 +64,9 @@ function stickyNavbarHandler() {
   }
 }
 
+const home = document.querySelector("#home");
+const homeHeight = home.getBoundingClientRect().height;
+const homeContainer = document.querySelector(".home__container");
 function homeOpacityHandler() {
   homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
 }
