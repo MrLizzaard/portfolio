@@ -1,7 +1,7 @@
 "use strict";
 
 //consts
-const menu = document.querySelector(".navbar__menu");
+const navbarMenu = document.querySelector(".navbar__menu");
 
 // Eventlistener
 
@@ -15,9 +15,10 @@ document.addEventListener("scroll", () => {
   }
 });
 
-menu.addEventListener("click", (e) => {
-  const target = e.target.classList;
-  if ("navbar__menu__item" === target[0]) {
-    console.log(target);
+navbarMenu.addEventListener("click", (e) => {
+  const target = e.target;
+  if ("navbar__menu__item" === target.classList[0]) {
+    const scrollTo = document.querySelector(`#${target.innerText.toLowerCase()}`);
+    scrollTo.scrollIntoView({ block: "center", behavior: "smooth" });
   }
 });
