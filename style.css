@@ -523,6 +523,9 @@ p {
     width: 100%;
     display: none;
   }
+  .navbar__menu.visible {
+    display: flex;
+  }
 
   /* About */
 

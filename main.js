@@ -20,6 +20,18 @@ navbarMenu.addEventListener("click", (e) => {
   }
 });
 
+//navbar hamburger Btn
+
+const navbarHamburger = document.querySelector(".navbar__toggle-btn");
+navbarHamburger.addEventListener("click", () => {
+  const status = navbarMenu.classList;
+  if (!status[1]) {
+    status.add("visible");
+  } else {
+    status.remove("visible");
+  }
+});
+
 //contact me btn handler
 
 const contactMeBtn = document.querySelector(".home__contactBtn");

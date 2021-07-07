@@ -127,9 +127,13 @@
       <!-- Project -->
       <section id="project" class="section">
         <h1 class="project__title title">Project</h1>
+        <div class="project__btn-container">
+          <button class="project__btn" data-filter="*">ALL</button><button class="project__btn" data-filter="FrontEnd">FrontEnd</button
+          ><button class="project__btn" data-filter="BackEnd">BackEnd</button>
+        </div>
         <div class="carousel">
           <div class="carousel__imgContainer">
-            <div class="carousel__items boostCourse">
+            <div class="carousel__items boostCourse" data-type="FrontEnd">
               <img src="./img/project/boostcorse.png" class="carousel__img boostcourse" alt="boostcorse" />
               <div class="carousel__contents">
                 <h2 class="project__name">부스트코스</h2>
@@ -137,7 +141,7 @@
               </div>
               <a class="project__github" href="https://github.com/MrLizzaard/Boostcourse" target="blank"><i class="fab fa-github"></i></a>
             </div>
-            <div class="carousel__items pogoClone">
+            <div class="carousel__items pogoClone" data-type="FrontEnd">
               <img src="./img/project/pogoClone.png" class="carousel__img pogoClone" alt="pogoClone" />
               <div class="carousel__contents">
                 <h2 class="project__name">웹사이트 클론코딩</h2>
@@ -145,7 +149,7 @@
               </div>
               <a class="project__github" href="https://github.com/MrLizzaard/CloningPoGo" target="blank"><i class="fab fa-github"></i></a>
             </div>
-            <div class="carousel__items ShoppingMall">
+            <div class="carousel__items ShoppingMall" data-type="FrontEnd">
               <img src="./img/project/ShoppingMall.png" class="carousel__img" alt="ShoppingMall" />
               <div class="carousel__contents">
                 <h2 class="project__name">동적웹사이트</h2>
@@ -153,7 +157,7 @@
               </div>
               <a class="project__github" href="https://github.com/MrLizzaard/ShoppingMall" target="blank"><i class="fab fa-github"></i></a>
             </div>
-            <div class="carousel__items ToDoList">
+            <div class="carousel__items ToDoList" data-type="FrontEnd">
               <img src="./img/project/ToDoList.png" class="carousel__img" alt="Shoppinglist" />
               <div class="carousel__contents">
                 <h2 class="project__name">투두 리스트</h2>
@@ -161,7 +165,7 @@
               </div>
               <a class="project__github" href="https://github.com/MrLizzaard/TodoListPrac" target="blank"><i class="fab fa-github"></i></a>
             </div>
-            <div class="carousel__items Youtube">
+            <div class="carousel__items Youtube" data-type="FrontEnd">
               <img src="./img/project/youtube.png" class="carousel__img" alt="Youtube" />
               <div class="carousel__contents">
                 <h2 class="project__name">유튜브 클론코딩</h2>
