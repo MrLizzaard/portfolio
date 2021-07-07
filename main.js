@@ -30,6 +30,14 @@ contactMeBtn.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
+//home opacity
+const home = document.querySelector("#home");
+const homeHeight = home.getBoundingClientRect().height;
+const homeContainer = document.querySelector(".home__container");
+document.addEventListener("scroll", () => {
+  homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
 //function
 
 function scrollIntoView(selector) {

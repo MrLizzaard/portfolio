@@ -186,8 +186,10 @@ p {
 
 #home {
   background: center url("img/home_background.png");
-  height: 90vh;
+}
+.home__container {
   padding: 80px 40px 40px 40px;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
