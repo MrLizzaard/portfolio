@@ -14,7 +14,8 @@ function arrowUpOpacityHandler() {}
 
 document.addEventListener("scroll", () => {
   stickyNavbarHandler();
-  homeAndArrowUpOpacityHandler();
+  homeOpacityHandler();
+  arrowUpOpacityHandler();
 });
 
 //navbar click event
@@ -54,7 +55,14 @@ function stickyNavbarHandler() {
   }
 }
 
-function homeAndArrowUpOpacityHandler() {
+function homeOpacityHandler() {
   homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
-  arrowUp.style.opacity = window.scrollY / homeHeight;
+}
+
+function arrowUpOpacityHandler() {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add("visible");
+  } else {
+    arrowUp.classList.remove("visible");
+  }
 }
