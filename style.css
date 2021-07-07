@@ -347,6 +347,7 @@ p {
 .skills__range-value {
   background-color: var(--color-yellow);
   height: 8px;
+  transition: all var(--animation-duration) ease-out;
 }
 
 /* Project, Carousel*/

@@ -36,6 +36,19 @@ arrowUp.addEventListener("click", () => {
 
 //skill value display
 
+const skillCon = document.querySelector(".skills__container");
+skillCon.addEventListener("mousemove", (e) => {
+  if (e.target.classList[0] == "fab") {
+    const target = e.target.parentNode;
+    const value = target.dataset.value;
+    const skillDisplay = target.parentNode.parentNode.querySelector(".skills__range-display");
+    const persentage = skillDisplay.querySelector(".skills__range-persentage");
+    const skillValue = skillDisplay.querySelector(".skills__range-value");
+    skillValue.style.width = `${value}%`;
+    persentage.innerText = `${value}%`;
+  }
+});
+
 //carousel Btn
 
 const carouselBtn = document.querySelector(".carousel__btn-container");
