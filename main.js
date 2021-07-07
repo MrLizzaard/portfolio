@@ -2,6 +2,7 @@
 
 //consts
 const navbarMenu = document.querySelector(".navbar__menu");
+const contactMeBtn = document.querySelector(".home__contactBtn");
 
 // Eventlistener
 
@@ -15,10 +16,23 @@ document.addEventListener("scroll", () => {
   }
 });
 
+//navbar click event
 navbarMenu.addEventListener("click", (e) => {
   const target = e.target;
   if ("navbar__menu__item" === target.classList[0]) {
-    const scrollTo = document.querySelector(`#${target.innerText.toLowerCase()}`);
-    scrollTo.scrollIntoView({ block: "center", behavior: "smooth" });
+    scrollIntoView(`#${target.innerText.toLowerCase()}`);
   }
 });
+
+//contact me btn handler
+
+contactMeBtn.addEventListener("click", () => {
+  scrollIntoView("#contact");
+});
+
+//function
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}
