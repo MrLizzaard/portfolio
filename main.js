@@ -18,6 +18,16 @@ navbarMenu.addEventListener("click", (e) => {
   if ("navbar__menu__item" === target.classList[0]) {
     scrollIntoView(`#${target.innerText.toLowerCase()}`);
   }
+}); // menu border
+const navbarMenuItem = document.querySelectorAll(".navbar__menu__item");
+navbarMenu.addEventListener("click", (e) => {
+  const target = e.target;
+  if ("navbar__menu__item" === target.classList[0]) {
+    navbarMenuItem.forEach((item) => {
+      item.classList.remove("active");
+    });
+    target.classList.add("active");
+  }
 });
 
 //navbar hamburger Btn
