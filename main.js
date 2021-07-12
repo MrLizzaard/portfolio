@@ -26,6 +26,7 @@ navbarMenu.addEventListener("click", (e) => {
     navbarMenuItem.forEach((item) => {
       item.classList.remove("active");
     });
+    navbarMenu.classList.remove("visible");
     target.classList.add("active");
   }
 });
@@ -34,12 +35,7 @@ navbarMenu.addEventListener("click", (e) => {
 
 const navbarHamburger = document.querySelector(".navbar__toggle-btn");
 navbarHamburger.addEventListener("click", () => {
-  const status = navbarMenu.classList;
-  if (!status[1]) {
-    status.add("visible");
-  } else {
-    status.remove("visible");
-  }
+  navbarMenu.classList.toggle("visible");
 });
 
 //contact me btn handler
