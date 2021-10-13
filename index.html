@@ -2,25 +2,29 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <meta name="description" content="DoHyeong's Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="author" content="DoHyeong" />
-    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <meta name="description" content="프론트엔드 개발자 김도형의 포트폴리오입니다." />
+    <meta name="robots" content="all" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>김도형의 포트폴리오</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
     <script src="https://kit.fontawesome.com/982efc6462.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
   </head>
   <body>
     <main class="HomePageLayout">
       <!-- Navbar -->
       <nav id="navbar">
         <div class="navbar__logo">
-          <div class="navbar__icon">*</div>
+          <div class="navbar__icon"><img src="./img/logo.png" alt="logo" /></div>
           <a href="#">DoHyeong</a>
         </div>
         <ul class="navbar__menu">
@@ -130,72 +134,17 @@
       <!-- Project -->
       <section id="project" class="section">
         <h1 class="project__title title">Project</h1>
-        <div class="project__btn-container">
-          <button class="project__btn">ALL</button>
-          <button class="project__btn">FrontEnd</button>
-          <button class="project__btn">BackEnd</button>
-        </div>
-        <div class="carousel">
-          <div class="carousel__imgContainer">
-            <div class="carousel__items boostCourse">
-              <img src="./img/project/boostcorse.png" class="carousel__img boostcourse" alt="boostcorse" />
-              <div class="carousel__contents">
-                <h2 class="project__name">부스트코스</h2>
-                <p>HTML, CSS</p>
-              </div>
-              <a class="project__github" href="https://github.com/MrLizzaard/Boostcourse" target="blank"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="carousel__items pogoClone">
-              <img src="./img/project/pogoClone.png" class="carousel__img pogoClone" alt="pogoClone" />
-              <div class="carousel__contents">
-                <h2 class="project__name">웹사이트 클론코딩</h2>
-                <p>HTML, CSS With media query, Javascript</p>
-              </div>
-              <a class="project__github" href="https://github.com/MrLizzaard/CloningPoGo" target="blank"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="carousel__items ShoppingMall">
-              <img src="./img/project/ShoppingMall.png" class="carousel__img" alt="ShoppingMall" />
-              <div class="carousel__contents">
-                <h2 class="project__name">동적웹사이트</h2>
-                <p>HTML, CSS, JavaScript, Json</p>
-              </div>
-              <a class="project__github" href="https://github.com/MrLizzaard/ShoppingMall" target="blank"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="carousel__items ToDoList">
-              <img src="./img/project/ToDoList.png" class="carousel__img" alt="Shoppinglist" />
-              <div class="carousel__contents">
-                <h2 class="project__name">투두 리스트</h2>
-                <p>HTML, CSS, Javascript</p>
-              </div>
-              <a class="project__github" href="https://github.com/MrLizzaard/TodoListPrac" target="blank"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="carousel__items Youtube">
-              <img src="./img/project/youtube.png" class="carousel__img" alt="Youtube" />
-              <div class="carousel__contents">
-                <h2 class="project__name">유튜브 클론코딩</h2>
-                <p>HTML, CSS With media query, Javascript</p>
-              </div>
-              <a class="project__github" href="https://github.com/MrLizzaard/Youtubecloaning" target="blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel__btn-container">
-          <button class="carousel__btn btn1"></button>
-          <button class="carousel__btn btn2"></button>
-          <button class="carousel__btn btn3"></button>
-          <button class="carousel__btn btn4"></button>
-          <button class="carousel__btn btn5"></button>
-        </div>
+        <h2 class="project__subTitle"></h2>
       </section>
       <!-- Contact -->
-      <section id="contact" class="section">
+      <footer id="contact" class="section">
         <h1 class="contact__title title">Contact</h1>
         <h2 class="contact__email">dhk21512@gmail.com</h2>
         <div class="contact__container">
           <div class="contact__gmail"><i class="fab fa-google"></i></div>
           <div class="contact__github"><i class="fab fa-github"></i></div>
         </div>
-      </section>
+      </footer>
 
       <!-- Arrow up Btn -->
       <button class="arrow-up"><i class="fas fa-arrow-up"></i></button>

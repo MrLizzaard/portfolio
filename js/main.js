@@ -67,17 +67,6 @@ skillCon.addEventListener("mousemove", (e) => {
   }
 });
 
-//carousel Btn
-
-const carouselBtn = document.querySelector(".carousel__btn-container");
-const carousel = document.querySelector(".carousel__imgContainer");
-let carouselWidth = 600;
-for (let i = 0; i < carouselBtn.childElementCount; i++) {
-  carouselBtn.children[i].addEventListener("click", () => {
-    carousel.style.transform = `translate(-${carouselWidth * i}px)`;
-  });
-}
-
 //function
 
 function scrollIntoView(selector) {
