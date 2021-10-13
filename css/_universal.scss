@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+}
+
+body {
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Typography */
+h1 {
+  font-size: $font-large;
+  font-weight: $weight-bold;
+  color: $color-black;
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: $font-medium;
+  font-weight: $weight-semi-bold;
+  color: $color-black;
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: $font-regular;
+  font-weight: $weight-regular;
+  color: $color-black;
+  margin: 8px 0;
+}
+
+p {
+  font-size: $font-regular;
+  font-weight: $weight-regular;
+  color: $color-black;
+  margin: 4px 0;
+}

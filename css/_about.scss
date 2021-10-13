@@ -1,0 +1,20 @@
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about__title {
+  max-width: 150px;
+}
+
+.about__container {
+  margin-left: 50px;
+  text-align: left;
+  max-width: 800px;
+}
+
+.about__context {
+  text-indent: 10px;
+}

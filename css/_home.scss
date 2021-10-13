@@ -1,0 +1,38 @@
+#home {
+  background: center url("../img/home_background.png");
+}
+.home__container {
+  padding: 80px 40px 40px 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid $color-white;
+}
+
+.home__title {
+  color: $color-white;
+  text-align: center;
+}
+
+.home__contactBtn {
+  color: $color-white;
+  font-size: $font-regular;
+  font-weight: $weight-bold;
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid $color-white;
+  border-radius: $size-border-radius;
+
+  &:hover {
+    color: $color-yellow;
+    border-color: $color-yellow;
+  }
+}
