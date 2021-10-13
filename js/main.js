@@ -67,6 +67,13 @@ skillCon.addEventListener("mousemove", (e) => {
   }
 });
 
+// pageFadeInAnimation
+
+const animationContents = document.querySelectorAll(".section__container");
+document.addEventListener("scroll", () => {
+  console.log("scroll");
+});
+
 //function
 
 function scrollIntoView(selector) {
