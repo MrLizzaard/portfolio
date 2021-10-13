@@ -183,7 +183,7 @@ p {
 /* Home */
 
 #home {
-  background: center url("img/home_background.png");
+  background: center url("../img/home_background.png");
 }
 .home__container {
   padding: 80px 40px 40px 40px;
@@ -312,6 +312,10 @@ p {
 
 .skills__js .skill__icon {
   color: var(--color-yellow);
+}
+
+.skills__react .skill__icon {
+  color: var(--color-blue);
 }
 
 .skills__nodejs .skill__icon {
