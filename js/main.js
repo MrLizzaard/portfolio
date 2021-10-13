@@ -1,7 +1,5 @@
 "use strict";
 
-//consts
-
 // Eventlistener
 
 document.addEventListener("scroll", () => {
@@ -18,7 +16,9 @@ navbarMenu.addEventListener("click", (e) => {
   if ("navbar__menu__item" === target.classList[0]) {
     scrollIntoView(`#${target.innerText.toLowerCase()}`);
   }
-}); // menu border
+});
+
+// menu border
 const navbarMenuItem = document.querySelectorAll(".navbar__menu__item");
 navbarMenu.addEventListener("click", (e) => {
   const target = e.target;
