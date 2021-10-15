@@ -40,23 +40,19 @@
 .section__container {
   margin: auto;
   max-width: 1200px;
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 0.3s ease-out;
 }
 
-/* HomePageLayout page snap */
+// for animation
 
-.HomePageLayout {
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
-  height: 100vh;
+.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-section {
-  scroll-snap-align: start;
-}
-
-/* 
-
-  arrow up Btn
+/* arrow up Btn
  */
 .arrow-up {
   position: fixed;

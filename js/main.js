@@ -69,10 +69,10 @@ skillCon.addEventListener("mousemove", (e) => {
 
 // pageFadeInAnimation 이거 만들기
 
-const animationContents = document.querySelectorAll(".section__container");
-document.addEventListener("scroll", () => {
-  console.log("scroll");
-});
+// const animationContents = document.querySelectorAll(".section__container");
+// document.addEventListener("scroll", () => {
+//   console.log("scroll");
+// });
 
 //function
 

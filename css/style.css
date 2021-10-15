@@ -11,6 +11,10 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", "Noto Sans KR", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body {
@@ -403,23 +407,20 @@ p {
 .section__container {
   margin: auto;
   max-width: 1200px;
+  opacity: 0;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-/* HomePageLayout page snap */
-.HomePageLayout {
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
-  overflow-y: scroll;
-  height: 100vh;
+.active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
-section {
-  scroll-snap-align: start;
-}
-
-/* 
-
-  arrow up Btn
+/* arrow up Btn
  */
 .arrow-up {
   position: fixed;
