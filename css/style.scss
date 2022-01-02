@@ -14,6 +14,11 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 
+.container {
+  width: 1092px;
+  margin: 0 auto;
+}
+
 .title:after {
   content: "";
   display: block;

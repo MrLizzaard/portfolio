@@ -23,24 +23,26 @@
     <main class="HomePageLayout">
       <!-- Navbar -->
       <nav id="navbar">
-        <div class="navbar__logo">
-          <div class="navbar__icon"><img src="./img/logo.png" alt="logo" /></div>
-          <a href="#">DoHyeong</a>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item active">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">Project</li>
-          <li class="navbar__menu__item">Contact</li>
-        </ul>
+        <div class="container">
+          <div class="navbar__logo">
+            <div class="navbar__icon"><img src="./img/logo.png" alt="logo" /></div>
+            <a href="#">DoHyeong</a>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__menu__item active">Home</li>
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Skills</li>
+            <li class="navbar__menu__item">Project</li>
+            <li class="navbar__menu__item">Contact</li>
+          </ul>
 
-        <!-- Toggle button -->
-        <button class="navbar__toggle-btn"><i class="fas fa-bars"></i></button>
+          <!-- Toggle button -->
+          <button class="navbar__toggle-btn"><i class="fas fa-bars"></i></button>
+        </div>
       </nav>
       <!-- Home -->
       <section id="home">
-        <div class="home__container">
+        <div class="home__container container">
           <img src="./img/home_img.jpg" alt="home_img" class="home__img" />
           <h1 class="home__title">개발자 김도형의 포트폴리오입니다</h1>
           <button class="home__contactBtn">Contact Me</button>
@@ -48,7 +50,7 @@
       </section>
       <!-- About Me -->
       <section id="about" class="section">
-        <div class="section__container">
+        <div class="section__container container">
           <h1 class="about__title title">About Me</h1>
           <article class="about__container">
             <h2 class="about__contextTitle">성실한사람</h2>
@@ -58,7 +60,7 @@
       </section>
       <!-- Skills -->
       <section id="skills" class="section">
-        <div class="section__container">
+        <div class="section__container container">
           <h1 class="skills__title title">Skills</h1>
           <article class="skills__container">
             <div class="skills__frontend">
@@ -135,18 +137,20 @@
       </section>
       <!-- Project -->
       <section id="project" class="section">
-        <div class="section__container">
+        <div class="section__container container">
           <h1 class="project__title title">Project</h1>
           <h2 class="project__subTitle"></h2>
         </div>
       </section>
       <!-- Contact -->
       <footer id="contact" class="section">
-        <h1 class="contact__title title">Contact</h1>
-        <h2 class="contact__email">dhk21512@gmail.com</h2>
-        <div class="contact__container">
-          <div class="contact__gmail"><i class="fab fa-google"></i></div>
-          <div class="contact__github"><i class="fab fa-github"></i></div>
+        <div class="container">
+          <h1 class="contact__title title">Contact</h1>
+          <h2 class="contact__email">dhk21512@gmail.com</h2>
+          <div class="contact__container">
+            <div class="contact__gmail"><i class="fab fa-google"></i></div>
+            <div class="contact__github"><i class="fab fa-github"></i></div>
+          </div>
         </div>
       </footer>
 

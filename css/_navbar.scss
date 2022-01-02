@@ -1,10 +1,7 @@
 #navbar {
   background-color: transparent;
   color: $color-light-white;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 16px;
   z-index: 5;
   position: fixed;
@@ -18,9 +15,8 @@
 }
 
 .navbar__logo {
+  float: left;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   a {
     color: $color-light-white;
@@ -50,6 +46,7 @@
 }
 
 .navbar__menu {
+  float: right;
   display: flex;
 }
 
