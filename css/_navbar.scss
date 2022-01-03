@@ -14,9 +14,14 @@
   transform: scale(1.01);
 }
 
-.navbar__logo {
-  float: left;
+.navbar__container {
   display: flex;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
 
   a {
     color: $color-light-white;
@@ -46,8 +51,8 @@
 }
 
 .navbar__menu {
-  float: right;
   display: flex;
+  align-items: center;
 }
 
 .navbar__menu__item {

@@ -86,11 +86,22 @@ p {
           transform: scale(1.01);
 }
 
-.navbar__logo {
-  float: left;
+.navbar__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar__logo a {
@@ -120,10 +131,12 @@ p {
 }
 
 .navbar__menu {
-  float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar__menu__item {
