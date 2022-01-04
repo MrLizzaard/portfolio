@@ -38,10 +38,15 @@
 
 .section__container {
   margin: auto;
-  max-width: 1200px;
+  max-width: $moniter-container-width;
+  padding: 20px 0 50px 0;
   opacity: 0;
   transform: translateY(200px);
   transition: all 0.3s ease-out;
+}
+
+.container {
+  padding: 20px 0 50px 0;
 }
 
 // for animation
