@@ -1,20 +1,26 @@
-#about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+// about
 
 .about__title {
-  max-width: 150px;
+  min-width: 150px;
 }
 
 .about__container {
-  margin-left: 50px;
-  text-align: left;
-  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  img {
+    min-width: 30%;
+    border-radius: 20px;
+  }
 }
 
 .about__context {
   text-indent: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__container {
+    img {
+      width: 80%;
+    }
+  }
 }

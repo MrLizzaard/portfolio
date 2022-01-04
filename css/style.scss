@@ -14,11 +14,6 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 
-.container {
-  width: 1092px;
-  margin: 0 auto;
-}
-
 .title:after {
   content: "";
   display: block;
@@ -38,7 +33,6 @@
 
 .section {
   margin: auto;
-  padding: 50px;
   text-align: center;
 }
 
@@ -46,7 +40,7 @@
   margin: auto;
   max-width: 1200px;
   opacity: 0;
-  transform: translateY(150px);
+  transform: translateY(200px);
   transition: all 0.3s ease-out;
 }
 
@@ -81,52 +75,6 @@
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
-  /* Navbar */
-  .navbar__toggle-btn {
-    color: $color-light-white;
-    font-size: $font-medium;
-    display: block;
-  }
-
-  #navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: $color-light-purple;
-  }
-
-  .navbar__menu {
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    display: none;
-  }
-  .navbar__menu.visible {
-    display: flex;
-  }
-
-  .section {
-    padding: 16px;
-  }
-
-  /* About */
-
-  #about {
-    flex-direction: column;
-  }
-
-  .about__title {
-    max-width: 300px;
-  }
-
-  .about__container {
-    margin: 0;
-    text-align: center;
-  }
-
-  .about__context {
-    text-indent: unset;
-  }
-
   .arrow-up {
     bottom: 20px;
     right: 10px;

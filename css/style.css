@@ -87,6 +87,9 @@ p {
 }
 
 .navbar__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,9 +125,6 @@ p {
 }
 
 .navbar__toggle-btn {
-  position: absolute;
-  top: 19px;
-  right: 32px;
   color: #dfe6e9;
   font-size: 28px;
   display: none;
@@ -152,6 +152,42 @@ p {
   background-color: #bdc3c7;
   border-radius: 4px;
   border-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    color: #dfe6e9;
+    font-size: 28px;
+    display: block;
+  }
+  #navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: #b181a8;
+  }
+  .navbar__menu {
+    top: 56px;
+    left: -20px;
+    background-color: #b181a8;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 110%;
+    display: none;
+  }
+  .navbar__menu.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 #home {
@@ -203,31 +239,28 @@ p {
   border-color: #f1c40f;
 }
 
-#about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-}
-
 .about__title {
-  max-width: 150px;
+  min-width: 150px;
 }
 
 .about__container {
-  margin-left: 50px;
-  text-align: left;
-  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about__container img {
+  min-width: 30%;
+  border-radius: 20px;
 }
 
 .about__context {
   text-indent: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__container img {
+    width: 80%;
+  }
 }
 
 #skills {
@@ -332,7 +365,7 @@ p {
 }
 
 .skills__range-value {
-  background-color: #f1c40f;
+  background-color: #e74c3c;
   height: 8px;
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
@@ -384,11 +417,6 @@ p {
 
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
-.container {
-  width: 1092px;
-  margin: 0 auto;
-}
-
 .title:after {
   content: "";
   display: block;
@@ -405,7 +433,6 @@ p {
 /* Section common */
 .section {
   margin: auto;
-  padding: 50px;
   text-align: center;
 }
 
@@ -413,8 +440,8 @@ p {
   margin: auto;
   max-width: 1200px;
   opacity: 0;
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -450,56 +477,6 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
-  /* Navbar */
-  .navbar__toggle-btn {
-    color: #dfe6e9;
-    font-size: 28px;
-    display: block;
-  }
-  #navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    background-color: #b181a8;
-  }
-  .navbar__menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    width: 100%;
-    display: none;
-  }
-  .navbar__menu.visible {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .section {
-    padding: 16px;
-  }
-  /* About */
-  #about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .about__title {
-    max-width: 300px;
-  }
-  .about__container {
-    margin: 0;
-    text-align: center;
-  }
-  .about__context {
-    text-indent: unset;
-  }
   .arrow-up {
     bottom: 20px;
     right: 10px;
