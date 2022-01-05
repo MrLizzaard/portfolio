@@ -1,6 +1,6 @@
 "use strict";
 
-const observerOptions = { threshold: 0.5 };
+const observerOptions = { threshold: 0.4 };
 const observerCallback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

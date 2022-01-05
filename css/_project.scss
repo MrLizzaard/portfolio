@@ -1,1 +1,19 @@
+#project {
+  .section__container {
+    overflow: hidden;
+  }
+}
 
+.project__lists {
+  width: 100%;
+  display: flex;
+}
+
+.project__item {
+  display: flex;
+  width: 100%;
+
+  img {
+    width: 30%;
+  }
+}
