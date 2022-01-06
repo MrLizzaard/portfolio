@@ -67,7 +67,7 @@ skillCon.addEventListener("mousemove", (e) => {
   }
 });
 
-// project arrow function
+// project carousel function
 
 const arrowLeft = document.querySelector(".arrowLeft");
 const arrowRight = document.querySelector(".arrowRight");
