@@ -67,12 +67,28 @@ skillCon.addEventListener("mousemove", (e) => {
   }
 });
 
-// pageFadeInAnimation 이거 만들기
+// project arrow function
 
-// const animationContents = document.querySelectorAll(".section__container");
-// document.addEventListener("scroll", () => {
-//   console.log("scroll");
-// });
+const arrowLeft = document.querySelector(".arrowLeft");
+const arrowRight = document.querySelector(".arrowRight");
+const projectList = document.querySelector(".project__lists");
+let currentPage = 0;
+const lastPage = 50;
+
+arrowRight.addEventListener("click", () => {
+  if (currentPage == lastPage) currentPage = 0;
+  else currentPage += 50;
+  console.log(currentPage);
+  projectList.style.transform = `translate(-${currentPage}%)`;
+});
+
+arrowLeft.addEventListener("click", () => {
+  if (currentPage != 0) currentPage -= 50;
+  else currentPage = lastPage;
+
+  console.log(currentPage);
+  projectList.style.transform = `translate(-${currentPage}%)`;
+});
 
 //function
 

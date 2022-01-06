@@ -1,19 +1,41 @@
-#project {
-  .section__container {
-    overflow: hidden;
-  }
+#project .section__container {
+  position: relative;
+}
+
+.arrowLeft {
+  position: absolute;
+  top: 59%;
+  left: 3%;
+  cursor: pointer;
+}
+
+.arrowRight {
+  position: absolute;
+  top: 59%;
+  right: 3%;
+  cursor: pointer;
+}
+
+.project__container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 4px 5px 7px 0px rgba(196, 196, 196, 0.91);
 }
 
 .project__lists {
-  width: 100%;
+  width: 200%;
   display: flex;
+  transition: all $animation-duration ease;
 }
 
 .project__item {
+  width: 50%;
   display: flex;
-  width: 100%;
-
   img {
+    width: 70%;
+  }
+  .project__description {
     width: 30%;
   }
 }
