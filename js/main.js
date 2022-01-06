@@ -73,19 +73,16 @@ const arrowLeft = document.querySelector(".arrowLeft");
 const arrowRight = document.querySelector(".arrowRight");
 const projectList = document.querySelector(".project__lists");
 let currentPage = 0;
-const lastPage = 50;
+const carouselPersentage = (projectList.getBoundingClientRect().width / 3 / projectList.getBoundingClientRect().width) * 100;
 
 arrowRight.addEventListener("click", () => {
-  if (currentPage == lastPage) currentPage = 0;
-  else currentPage += 50;
+  currentPage += carouselPersentage;
   console.log(currentPage);
   projectList.style.transform = `translate(-${currentPage}%)`;
 });
 
 arrowLeft.addEventListener("click", () => {
-  if (currentPage != 0) currentPage -= 50;
-  else currentPage = lastPage;
-
+  currentPage -= carouselPersentage;
   console.log(currentPage);
   projectList.style.transform = `translate(-${currentPage}%)`;
 });
