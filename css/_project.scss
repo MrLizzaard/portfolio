@@ -24,7 +24,7 @@
 }
 
 .project__lists {
-  width: 300%;
+  width: 400%;
   display: flex;
   transition: all $animation-duration ease;
 }
@@ -38,4 +38,23 @@
   .project__description {
     width: 30%;
   }
+}
+
+.carousel__btn__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel__btn {
+  margin: 0 10px;
+  width: 50px;
+  height: 5px;
+  background-color: $color-light-grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.carousel__active {
+  background-color: $color-dark-grey;
 }

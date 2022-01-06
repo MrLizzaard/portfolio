@@ -73,18 +73,43 @@ const arrowLeft = document.querySelector(".arrowLeft");
 const arrowRight = document.querySelector(".arrowRight");
 const projectList = document.querySelector(".project__lists");
 let currentPage = 0;
-const carouselPersentage = (projectList.getBoundingClientRect().width / 3 / projectList.getBoundingClientRect().width) * 100;
+const carouselPersentage = 25;
 
 arrowRight.addEventListener("click", () => {
-  currentPage += carouselPersentage;
-  console.log(currentPage);
+  if (currentPage == 75) currentPage = 0;
+  else currentPage += carouselPersentage;
+  carouselIndicator(currentPage);
   projectList.style.transform = `translate(-${currentPage}%)`;
 });
 
 arrowLeft.addEventListener("click", () => {
-  currentPage -= carouselPersentage;
-  console.log(currentPage);
+  if (currentPage == 0) currentPage = 75;
+  else currentPage -= carouselPersentage;
+  carouselIndicator(currentPage);
   projectList.style.transform = `translate(-${currentPage}%)`;
+});
+
+const carouselBtn = document.querySelectorAll(".carousel__btn");
+carouselBtn.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    if (e.target === carouselBtn[0]) {
+      currentPage = 0;
+      carouselIndicator(currentPage);
+      projectList.style.transform = `translate(-${currentPage}%)`;
+    } else if (e.target === carouselBtn[1]) {
+      currentPage = 25;
+      carouselIndicator(currentPage);
+      projectList.style.transform = `translate(-${currentPage}%)`;
+    } else if (e.target === carouselBtn[2]) {
+      currentPage = 50;
+      carouselIndicator(currentPage);
+      projectList.style.transform = `translate(-${currentPage}%)`;
+    } else if (e.target === carouselBtn[3]) {
+      currentPage = 75;
+      carouselIndicator(currentPage);
+      projectList.style.transform = `translate(-${currentPage}%)`;
+    }
+  });
 });
 
 //function
@@ -116,5 +141,30 @@ function arrowUpOpacityHandler() {
     arrowUp.classList.add("visible");
   } else {
     arrowUp.classList.remove("visible");
+  }
+}
+
+carouselBtn[0].classList.add("carousel__active");
+function carouselIndicator(currentPage) {
+  if (currentPage == 0) {
+    carouselBtn.forEach((btn) => {
+      btn.classList.remove("carousel__active");
+    });
+    carouselBtn[0].classList.add("carousel__active");
+  } else if (currentPage == 25) {
+    carouselBtn.forEach((btn) => {
+      btn.classList.remove("carousel__active");
+    });
+    carouselBtn[1].classList.add("carousel__active");
+  } else if (currentPage == 50) {
+    carouselBtn.forEach((btn) => {
+      btn.classList.remove("carousel__active");
+    });
+    carouselBtn[2].classList.add("carousel__active");
+  } else {
+    carouselBtn.forEach((btn) => {
+      btn.classList.remove("carousel__active");
+    });
+    carouselBtn[3].classList.add("carousel__active");
   }
 }
