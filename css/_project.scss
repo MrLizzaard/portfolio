@@ -58,3 +58,58 @@
 .carousel__active {
   background-color: $color-dark-grey;
 }
+
+.project__item {
+  position: relative;
+  i {
+    font-size: $font-medium;
+  }
+
+  .project__item__title {
+    font-size: $font-regular;
+  }
+
+  .project__item__icon {
+    margin: 15px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+  }
+
+  .project__item__description {
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .mongoDB {
+    width: 30px;
+  }
+
+  .fa-github {
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+  }
+
+  .fa-bootstrap {
+    color: $color-purple;
+  }
+
+  .fa-node-js {
+    color: $color-green;
+  }
+
+  .fa-sass {
+    color: $color-light-purple;
+  }
+
+  .fa-react {
+    color: $color-blue;
+  }
+
+  .firebase {
+    width: 28px;
+  }
+}

@@ -446,6 +446,67 @@ p {
   background-color: #7f8c8d;
 }
 
+.project__item {
+  position: relative;
+}
+
+.project__item i {
+  font-size: 28px;
+}
+
+.project__item .project__item__title {
+  font-size: 18px;
+}
+
+.project__item .project__item__icon {
+  margin: 15px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10%;
+}
+
+.project__item .project__item__description {
+  text-align: left;
+  padding: 0 10px;
+}
+
+.project__item .mongoDB {
+  width: 30px;
+}
+
+.project__item .fa-github {
+  position: absolute;
+  right: 2%;
+  bottom: 5%;
+}
+
+.project__item .fa-bootstrap {
+  color: #7111f5;
+}
+
+.project__item .fa-node-js {
+  color: #27ae60;
+}
+
+.project__item .fa-sass {
+  color: #b181a8;
+}
+
+.project__item .fa-react {
+  color: #2980b9;
+}
+
+.project__item .firebase {
+  width: 28px;
+}
+
 #contact {
   background-color: #b181a8;
 }
