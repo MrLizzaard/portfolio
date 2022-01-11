@@ -507,6 +507,25 @@ p {
   width: 28px;
 }
 
+@media screen and (max-width: 768px) {
+  .project__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project__item img {
+    width: 100%;
+  }
+  .project__item .project__description {
+    width: 100%;
+  }
+  .project__item .project__item__description {
+    text-align: left;
+    padding-bottom: 40px;
+  }
+}
+
 #contact {
   background-color: #b181a8;
 }
@@ -564,7 +583,8 @@ p {
 
 /* Section common */
 .section {
-  margin: auto;
+  margin: 0px auto;
+  padding: 50px 0;
   text-align: center;
 }
 

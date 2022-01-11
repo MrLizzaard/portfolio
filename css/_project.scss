@@ -113,3 +113,21 @@
     width: 28px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .project__item {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+    .project__description {
+      width: 100%;
+    }
+
+    .project__item__description {
+      text-align: left;
+      padding-bottom: 40px;
+    }
+  }
+}
