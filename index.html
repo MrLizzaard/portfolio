@@ -53,9 +53,24 @@
         <div class="section__container">
           <h1 class="about__title title">About Me</h1>
           <article class="about__container">
-            <img src="./img/profile.jpg" alt="profile" />
-            <h2 class="about__contextTitle">성실한사람</h2>
-            <p class="about__context">개발자로써 항상 더욱 보기좋고 더욱 유저 친화적인 웹사이트를 만들 수 있도록 노력하겠습니다.</p>
+            <div class="about__profile">
+              <img src="./img/profile.jpg" alt="profile" />
+              <div class="about__contextTitle">
+                <span class="first">성장하는</span>
+                <span class="second">개발자</span>
+                <span class="third">김도형입니다</span>
+              </div>
+            </div>
+            <div class="about__description">
+              <h2>김도형 / DoHyeong Kim</h2>
+              <p>1995.08.14 / 부산광역시</p>
+              <div class="about__personalInfo">
+                Tel. 010-4113-4869 <br />
+                Email. dhk21512@gmail.com<br />
+                부산광역시 해운대구 좌동
+              </div>
+              <p class="about__context">개발자로써 항상 더욱 보기좋고 더욱 유저 친화적인 웹사이트를 만들 수 있도록 노력하겠습니다.</p>
+            </div>
           </article>
         </div>
       </section>
@@ -149,7 +164,9 @@
                 <div class="project__description">
                   <h3 class="project__item__title">자유게시판</h3>
                   <div class="project__item__icon">
-                    <img src="https://img.icons8.com/color/28/000000/mongodb.png" class="mongoDB" /> | Express | <i class="fab fa-bootstrap"></i> |
+                    <img src="https://img.icons8.com/color/28/000000/mongodb.png" class="mongoDB" /> |
+                    <span>Express</span>
+                    | <i class="fab fa-bootstrap"></i> |
                     <i class="fab fa-node-js"></i>
                   </div>
 
@@ -165,7 +182,7 @@
                 <img src="./img/project/pageTransition.gif" alt="page transition" />
                 <div class="project__description">
                   <h3 class="project__item__title">Page Transition</h3>
-                  <div class="project__item__icon">parcel | gsap | dogstudio | <i class="fab fa-sass"></i></div>
+                  <div class="project__item__icon"><span>parcel</span> |<span>gsap</span>|<span>dogstudio</span> | <i class="fab fa-sass"></i></div>
                   <div class="project__item__description">
                     gsap과 dogstudio라는 자바스크립트 애니메이션 라이브러리를 이용한 페이지 전환 사이트. <br /><br />
                     sass로 직접 웹페이지를 꾸몄다.
@@ -217,8 +234,12 @@
           <h1 class="contact__title title">Contact</h1>
           <h2 class="contact__email">dhk21512@gmail.com</h2>
           <div class="contact__container">
-            <div class="contact__gmail"><i class="fab fa-google"></i></div>
-            <div class="contact__github"><i class="fab fa-github"></i></div>
+            <div class="contact__gmail">
+              <a href="mailto: dhk21512@gmail.com"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="contact__github">
+              <a href="https://github.com/MrLizzaard/portfolio" target="blank"><i class="fab fa-github"></i></a>
+            </div>
           </div>
         </div>
       </footer>

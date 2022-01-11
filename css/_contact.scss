@@ -17,6 +17,10 @@
   justify-content: center;
   font-size: $font-large;
   margin: 24px 0 0 0;
+
+  a {
+    color: $color-white;
+  }
 }
 
 .contact__gmail,
@@ -26,6 +30,7 @@
 
 .contact__container i {
   transition: all $animation-duration ease;
+  cursor: pointer;
 }
 
 .contact__container i:hover {

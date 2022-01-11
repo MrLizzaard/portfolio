@@ -33,7 +33,7 @@
 
 .section {
   margin: 0px auto;
-  padding: 50px 0;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -81,6 +81,10 @@
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: $font-medium-large;
+  }
+
   .arrow-up {
     bottom: 20px;
     right: 10px;
