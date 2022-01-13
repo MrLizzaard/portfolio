@@ -255,12 +255,18 @@ p {
 .about__container img {
   width: 100%;
   border-radius: 20px;
+  margin-bottom: 40px;
 }
 
 .about__container p {
   font-size: 16px;
   text-align: left;
   text-indent: 0px;
+}
+
+.about__container .about__context {
+  font-size: 28px;
+  text-indent: unset;
 }
 
 .about__profile {
@@ -287,7 +293,7 @@ p {
 }
 
 .about__contextTitle .third {
-  font-size: 18px;
+  font-size: 28px;
   display: block;
   text-align: right;
 }
@@ -302,11 +308,19 @@ p {
   font-size: 18px;
 }
 
-.about__context {
-  text-indent: 10px;
+.about__description__container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about__description__container p {
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
+  .about__profile img {
+    margin-bottom: 10px;
+  }
   .about__contextTitle {
     width: 100%;
   }
@@ -332,8 +346,20 @@ p {
     padding: 0 10px;
     font-size: 14px;
   }
-  .about__description h2 {
+  .about__description__container {
+    width: 100%;
+  }
+  .about__description__container h2 {
     font-size: 18px;
+  }
+  .about__description__container .about__personalInfo {
+    font-size: 16px;
+  }
+  .about__description__container p {
+    margin-top: 10px;
+  }
+  .about__description__container .about__context {
+    font-size: 16px;
   }
 }
 
