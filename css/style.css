@@ -87,7 +87,7 @@ p {
 }
 
 .navbar__container {
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
   position: relative;
   display: -webkit-box;
@@ -279,31 +279,6 @@ p {
 
 .about__profile {
   width: 40%;
-}
-
-.about__contextTitle {
-  width: 100%;
-}
-
-.about__contextTitle .first {
-  font-size: 28px;
-  display: block;
-  margin-bottom: -15px;
-  text-align: left;
-}
-
-.about__contextTitle .second {
-  font-size: 48px;
-  color: #b181a8;
-  font-weight: 600;
-  display: block;
-  margin-bottom: -13px;
-}
-
-.about__contextTitle .third {
-  font-size: 28px;
-  display: block;
-  text-align: right;
 }
 
 .about__description {

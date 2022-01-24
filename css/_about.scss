@@ -30,30 +30,6 @@
   width: 40%;
 }
 
-.about__contextTitle {
-  width: 100%;
-  .first {
-    font-size: $font-medium;
-    display: block;
-    margin-bottom: -15px;
-    text-align: left;
-  }
-
-  .second {
-    font-size: $font-large;
-    color: $color-light-purple;
-    font-weight: $weight-semi-bold;
-    display: block;
-    margin-bottom: -13px;
-  }
-
-  .third {
-    font-size: $font-medium;
-    display: block;
-    text-align: right;
-  }
-}
-
 .about__description {
   width: 60%;
   text-align: left;
