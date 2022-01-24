@@ -190,8 +190,12 @@ p {
   }
 }
 
-#home {
+.background {
+  z-index: -100;
   background: center url("../img/home_background.png");
+  width: 100%;
+  height: 100vh;
+  position: fixed;
 }
 
 .home__container {
@@ -239,6 +243,10 @@ p {
 .home__contactBtn:hover {
   color: #f1c40f;
   border-color: #f1c40f;
+}
+
+#about {
+  background: white;
 }
 
 .about__title {
@@ -625,7 +633,7 @@ p {
 }
 
 #contact {
-  background-color: #b181a8;
+  background-color: transparent;
 }
 
 .contact__title,
@@ -689,6 +697,7 @@ p {
   margin: 0px auto;
   padding: 50px 20px;
   text-align: center;
+  background-color: white;
 }
 
 .section__container {

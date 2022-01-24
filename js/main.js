@@ -4,7 +4,7 @@
 
 document.addEventListener("scroll", () => {
   stickyNavbarHandler();
-  homeOpacityHandler();
+  // homeOpacityHandler();
   arrowUpOpacityHandler();
 });
 
